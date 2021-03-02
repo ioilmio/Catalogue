@@ -1,0 +1,22 @@
+@import "config";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+
+  .nav-logo {
+    margin-left: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    margin-right: 1rem;
+
+    a {
+      margin-right: 1rem;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+  }
+}
