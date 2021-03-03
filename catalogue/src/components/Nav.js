@@ -8,25 +8,23 @@ import changeFilter from '../redux/Filter/FiltersActions';
 
 function Nav({ changeFilter }) {
   return (
-    <>
-      <nav>
-        <div className="nav-logo">
-          Bubble
-          <img src="" alt="" />
-        </div>
-        <div className="filter">
-          <Filter changeFilter={changeFilter} />
-        </div>
-        <div className="nav-links">
-          <Link to="/">
-            <div>Home</div>
-          </Link>
-          <Link to="/about">
-            <div>About</div>
-          </Link>
-        </div>
-      </nav>
-    </>
+    <nav>
+      <div className="nav-logo">
+        Bubble
+        <img src="" alt="" />
+      </div>
+      <div className="filter">
+        <Filter changeFilter={changeFilter} />
+      </div>
+      <div className="nav-links">
+        <Link to="/">
+          <div>Home</div>
+        </Link>
+        <Link to="/about">
+          <div>About</div>
+        </Link>
+      </div>
+    </nav>
   );
 }
 
