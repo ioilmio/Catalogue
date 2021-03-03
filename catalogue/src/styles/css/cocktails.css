@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.cocktail-list-item-container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-radius: 5px;
+  background-color: #2a343d;
+  margin-top: 2rem; }
+  .cocktail-list-item-container .cocktail-list-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem; }
+    .cocktail-list-item-container .cocktail-list-item .cocktail-link {
+      font-family: sans-serif;
+      color: #0c1d9c;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      background-color: rgba(255, 255, 255, 0.467);
+      width: 70%;
+      border-radius: 5px; }
+    .cocktail-list-item-container .cocktail-list-item .item-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .cocktail-list-item-container .cocktail-list-item .cocktail-list-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; }
+
+/*# sourceMappingURL=cocktails.css.map */

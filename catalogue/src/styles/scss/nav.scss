@@ -3,10 +3,14 @@
 nav {
   display: flex;
   justify-content: space-between;
-  height: 2rem;
+  align-items: center;
+  height: 4rem;
+  background-color: rgb(42, 52, 61);
+  font-family: sans-serif;
 
   .nav-logo {
     margin-left: 1rem;
+    color: rgb(164, 168, 196);
   }
 
   .nav-links {
@@ -15,8 +19,9 @@ nav {
 
     a {
       margin-right: 1rem;
-      font-family: sans-serif;
+      // font-family: sans-serif;
       text-decoration: none;
+      color: rgb(164, 168, 196);
     }
   }
 }

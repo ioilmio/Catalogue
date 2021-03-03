@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,CAAE;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;;ACDxB,mBAAoB;EAClB,OAAO,EAAE,IAAI",
-"sources": ["../scss/_config.scss","../scss/coktails.scss"],
-"names": [],
-"file": "coktails.css"
-}

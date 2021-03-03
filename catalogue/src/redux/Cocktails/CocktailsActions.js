@@ -19,7 +19,8 @@ export const fetchCocktailsFailure = error => ({
 
 export const fetchCocktails = () => dispatch => {
   dispatch(fetchCocktailsRequest);
-  axios.get('  https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka')
+  // axios.get('  https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka')
+  axios.get(' https://www.thecocktaildb.com/api/json/v1/1/search.php?f=s')
     .then(response => {
       const cocktails = response.data;
       dispatch(fetchCocktailsSuccess(cocktails.drinks));
