@@ -1,0 +1,48 @@
+@import "config";
+
+.cocktail {
+  display: flex;
+  padding: 2rem;
+  font-family: sans-serif;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    // padding: 2rem;
+  }
+
+  &-category {
+    margin: 0 2rem;
+  }
+
+  &-glass {
+    margin: 0 2rem;
+  }
+
+  &-name {
+    font-size: 1.5rem;
+    margin: 0 2rem 1rem 2rem;
+  }
+
+  &-ingredients li {
+    list-style: none;
+    margin: 0 2rem;
+  }
+
+  h2 {
+    margin: 1rem 2rem 0 2rem;
+  }
+
+  &-instructions {
+    margin: 0 2rem 1rem 2rem;
+  }
+
+  &-image {
+    border-radius: 10px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+}

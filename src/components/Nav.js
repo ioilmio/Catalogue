@@ -9,8 +9,10 @@ import changeFilter from '../redux/Filter/FiltersActions';
 function Nav({ changeFilter }) {
   return (
     <nav>
-      <div className="nav-logo">
-        Bubble
+      <div className="nav-links">
+        <Link to="/">
+          Bubble
+        </Link>
         <img src="" alt="" />
       </div>
       <div className="filter">

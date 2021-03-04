@@ -4,20 +4,16 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchCocktails } from '../redux/Cocktails/CocktailsActions';
+import changeFilter from '../redux/Filter/FiltersActions';
 
 function CocktailList({
   fetchCocktails, cocktails, filter,
 }) {
+  const filteredCocktails = (filter) ? cocktails.cocktails.filter(cocktail => cocktail.strAlcoholic === 'Alcoholic') : cocktails.cocktails;
   useEffect(() => {
     fetchCocktails();
-  }, [filter]);
-  const filteredCocktails = (!filter) ? cocktails.cocktails.filter(cocktail => cocktail.strAlcoholic === 'Alcoholic') : cocktails.cocktails;
-  console.log('cocktails', cocktails.cocktails);
-  console.log('filter', filter);
-  console.log(cocktails.cocktails.filter(cocktail => cocktail.strAlcoholic === 'Alcoholic'));
-  console.log('filteredcocktail', filteredCocktails);
+  }, []);
   return (
-
     <div className="cocktail-list-item-container">
       {filteredCocktails.map((cocktail, index) => (
         <li key={cocktail.strDrink} className="cocktail-list-item">
@@ -38,22 +34,24 @@ function CocktailList({
   );
 }
 
-CocktailList.defaultProps = {
-  filter: false,
-};
+// CocktailList.defaultProps = {
+//   filter: false,
+// };
 
 CocktailList.propTypes = {
   cocktails: PropTypes.instanceOf(Object).isRequired,
   fetchCocktails: PropTypes.func.isRequired,
-  filter: PropTypes.bool,
+  filter: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = state => ({
   cocktails: state.cocktails,
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
   fetchCocktails: () => dispatch(fetchCocktails()),
+  changeFilter: () => dispatch(changeFilter()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CocktailList);
