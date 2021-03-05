@@ -8,4 +8,5 @@
   display: flex;
   justify-content: center;
   background-color: #75797e;
+  min-height: 100vh;
 }

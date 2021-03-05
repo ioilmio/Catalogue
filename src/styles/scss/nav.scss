@@ -7,6 +7,9 @@ nav {
   height: 4rem;
   background-color: rgb(42, 52, 61);
   font-family: sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   .nav-logo {
     margin-left: 1rem;
