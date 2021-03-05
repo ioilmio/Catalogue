@@ -22,9 +22,26 @@ nav {
 
     a {
       margin-right: 1rem;
-      // font-family: sans-serif;
       text-decoration: none;
       color: rgb(164, 168, 196);
     }
+  }
+
+  input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.582);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    text-indent: 1rem;
+    // caret-color: orangered;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 3rem;
+    text-transform: uppercase;
+  }
+
+  input[type="checkbox"] {
+    margin-left: 1rem;
   }
 }

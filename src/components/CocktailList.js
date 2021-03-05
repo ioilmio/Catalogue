@@ -41,8 +41,16 @@ function CocktailList({
     );
   }
   return (
-    <p className="error">
-      Theres no cocktail starting with this letter
+    <p
+      className="error"
+      style={{
+        fontSize: '3rem',
+        padding: '3rem',
+        margin: '3rem',
+        fontFamily: 'sans-serif',
+      }}
+    >
+      There is no cocktail starting with this letter
     </p>
   );
 }

@@ -18,8 +18,11 @@ const Input = ({
           Search by first letter...
           <input
             type="text"
-            className="nav-filter"
+            className="nav-query"
             name="alcoholic"
+            max-lenght="1"
+            // eslint-disable-next-line jsx-a11y/no-autofocus
+            autoFocus
             onChange={e => {
               e.target.value = e.target.value ? e.target.value[e.target.value.length - 1] : '';
               fetchQuery(e.target.value);
