@@ -1,31 +1,39 @@
-// test-utils.js
-import React from 'react';
-import { render as rtlRender } from '@testing-library/react';
-import { createStore } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
+import { render } from '@testing-library/react';
+import { createMemoryHistory } from 'history';
+
+import * as React from 'react';
 import { Provider } from 'react-redux';
-import { PropTypes } from 'prop-types';
-import reducer from './src/redux/rootReducer';
+import { Router } from 'react-router-dom';
 
-function render(
+import rootReducer from './src/redux/rootReducer';
+
+const renderWithStateMgmtAndRouter = (
+
   ui,
-  {
-    initialState,
-    store = createStore(reducer, initialState),
-    ...renderOptions
-  } = {},
-) {
-  // eslint-disable-next-line react/prop-types
-  function Wrapper({ children }) {
-    return <Provider store={store}>{children}</Provider>;
-  }
-  return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });
-}
+  { actions = [], route = '/' } = {},
+) => {
+  const store = configureStore({
+    reducer: rootReducer,
+  });
+  actions.forEach(action => store.dispatch(action));
+  const history = createMemoryHistory({
 
-render.propTypes = {
-  children: PropTypes.func.isRequired,
+    initialEntries: [route],
+
+  });
+
+  const renderResult = render(
+    <Router history={history}>
+      <Provider store={store}>{ui}</Provider>
+    </Router>,
+
+  );
+  return {
+    ...renderResult,
+    store,
+    history,
+  };
 };
 
-// re-export everything
-export * from '@testing-library/react';
-// override render method
-export { render };
+export default renderWithStateMgmtAndRouter;

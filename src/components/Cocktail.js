@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -9,7 +10,7 @@ function Cocktail({ fetchCocktail, cocktail, match }) {
   useEffect(() => {
     fetchCocktail(match.params.id);
   }, []);
-  // eslint-disable-next-line no-restricted-globals
+
   if (location.pathname.match(/about/gi)) {
     return (
       <About />
@@ -121,10 +122,21 @@ function Cocktail({ fetchCocktail, cocktail, match }) {
   );
 }
 
+Cocktail.defaultProps = {
+  match: {
+    path: '/:id',
+    url: '/12728',
+    isExact: true,
+    params: {
+      id: '12728',
+    },
+  },
+};
+
 Cocktail.propTypes = {
   cocktail: PropTypes.instanceOf(Object).isRequired,
   fetchCocktail: PropTypes.func.isRequired,
-  match: PropTypes.instanceOf(Object).isRequired,
+  match: PropTypes.instanceOf(Object),
 };
 
 const mapStateToProps = state => ({

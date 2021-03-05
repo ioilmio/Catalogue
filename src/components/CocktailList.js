@@ -34,10 +34,6 @@ function CocktailList({
   );
 }
 
-// CocktailList.defaultProps = {
-//   filter: false,
-// };
-
 CocktailList.propTypes = {
   cocktails: PropTypes.instanceOf(Object).isRequired,
   fetchCocktails: PropTypes.func.isRequired,
