@@ -34,5 +34,5 @@ CategoryFilter.propTypes = {
   changeFilter: PropTypes.func.isRequired,
   location: PropTypes.instanceOf(Object).isRequired,
 };
-const Category = withRouter(CategoryFilter);
-export default Category;
+const Filter = withRouter(CategoryFilter);
+export default Filter;

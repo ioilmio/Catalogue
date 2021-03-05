@@ -17,9 +17,9 @@ export const fetchCocktailsFailure = error => ({
   payload: error,
 });
 
-export const fetchCocktails = () => dispatch => {
+export const fetchCocktails = query => dispatch => {
   dispatch(fetchCocktailsRequest);
-  axios.get(' https://www.thecocktaildb.com/api/json/v1/1/search.php?f=s')
+  axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${query}`)
     .then(response => {
       const cocktails = response.data;
       dispatch(fetchCocktailsSuccess(cocktails.drinks));

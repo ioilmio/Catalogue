@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import Filter from './Filter';
 import changeFilter from '../redux/Filter/FiltersActions';
+import InputComponent from './Input';
 
 function Nav({ changeFilter }) {
   return (
@@ -17,6 +18,7 @@ function Nav({ changeFilter }) {
       </div>
       <div className="filter">
         <Filter changeFilter={changeFilter} />
+        <InputComponent />
       </div>
       <div className="nav-links">
         <Link to="/">
