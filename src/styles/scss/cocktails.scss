@@ -17,13 +17,14 @@
 
     .cocktail-link {
       font-family: sans-serif;
-      color: rgb(12, 29, 156);
+      color: rgb(61, 55, 146);
       text-decoration: none;
       text-align: center;
       position: relative;
       top: 50%;
+      padding: 1rem;
       background-color: hsla(0, 0%, 100%, 0.467);
-      width: 50%;
+      width: auto;
       border-radius: 5px;
     }
 
