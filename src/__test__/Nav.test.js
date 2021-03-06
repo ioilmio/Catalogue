@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';
 import rootReducer from '../redux/rootReducer';
-
 import Nav from '../components/Nav';
 
 test('Nav can be rendered', () => {
@@ -19,6 +18,5 @@ test('Nav can be rendered', () => {
         <Nav />
       </Router>
     </Provider>,
-
   );
 });

@@ -6,7 +6,7 @@ import * as React from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 
-import rootReducer from './src/redux/rootReducer';
+import rootReducer from '../redux/rootReducer';
 
 const renderWithStateMgmtAndRouter = (
 
