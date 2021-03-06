@@ -48,7 +48,7 @@ This project was built using these technologies.
 
 ## Live version
 
-[Click here!](https://Catalogue-react-2021.herokuapp.com/)
+[Click here!](https://cocktailist.netlify.app/)
 
 ### Usage
 
