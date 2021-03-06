@@ -1,6 +1,6 @@
 import CHANGE_QUERY from './InputTypes';
 
-const inputReducer = (state = 't', action) => {
+const inputReducer = (state = 'n', action) => {
   switch (action.type) {
     case CHANGE_QUERY:
       return action.value;

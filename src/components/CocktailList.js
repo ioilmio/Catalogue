@@ -41,22 +41,14 @@ function CocktailList({
     );
   }
   return (
-    <p
-      className="error"
-      style={{
-        fontSize: '3rem',
-        padding: '3rem',
-        margin: '3rem',
-        fontFamily: 'sans-serif',
-      }}
-    >
+    <p className="error">
       There is no cocktail starting with this letter
     </p>
   );
 }
 
 CocktailList.defaultProps = {
-  query: 't',
+  query: '',
 };
 
 CocktailList.propTypes = {
