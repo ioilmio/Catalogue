@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  font-size: 3rem;
+  padding: 3rem;
+  margin: 3rem;
+  font-family: sans-serif;
+}

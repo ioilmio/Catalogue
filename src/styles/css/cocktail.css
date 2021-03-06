@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cocktail {
+  display: flex;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.cocktail-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.cocktail-category {
+  margin: 0 2rem;
+}
+
+.cocktail-glass {
+  margin: 0 2rem;
+}
+
+.cocktail-name {
+  font-size: 1.5rem;
+  margin: 0 2rem 1rem 2rem;
+}
+
+.cocktail-ingredients li {
+  list-style: none;
+  margin: 0 2rem;
+}
+
+.cocktail h2 {
+  margin: 1rem 2rem 0 2rem;
+}
+
+.cocktail-instructions {
+  margin: 0 2rem 1rem 2rem;
+}
+
+.cocktail-image {
+  border-radius: 10px;
+}
+
+.cocktail-image img {
+  border-radius: 10px;
+}

@@ -1,0 +1,50 @@
+@import "config";
+
+.cocktail-list-item-container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-radius: 5px;
+  background-color: rgb(42, 52, 61);
+  margin-top: 2rem;
+
+  .cocktail-list-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin: 2rem;
+
+    .cocktail-link {
+      font-family: sans-serif;
+      color: rgb(61, 55, 146);
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      padding: 1rem;
+      background-color: hsla(0, 0%, 100%, 0.467);
+      width: auto;
+      border-radius: 5px;
+    }
+
+    .item-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cocktail-list-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+}
+
+.error {
+  font-size: 3rem;
+  padding: 3rem;
+  margin: 3rem;
+  font-family: sans-serif;
+}
