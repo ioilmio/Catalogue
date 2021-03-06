@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -34,14 +33,9 @@ const Input = ({
   );
 };
 
-// Input.defaultProps = {
-//   query: '',
-// };
-
 Input.propTypes = {
   fetchQuery: PropTypes.func.isRequired,
   location: PropTypes.instanceOf(Object).isRequired,
-  // query: PropTypes.string,
 };
 
 const mapStateToProps = state => ({

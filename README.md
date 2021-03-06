@@ -1,4 +1,4 @@
-# Calculator APP
+# Cocktail List APP
 
 
 <br />
@@ -28,7 +28,7 @@
 - [Acknowledgements](#acknowledgements)
 
 ## About The Project
-### This is a simple Catalogue web app, it uses React and Redux to fetch cocktail data from cocktailDB API, it displays a list of cocktails, where you can filter results and a details page when you click on them;
+### This is a simple Catalogue of *cocktails recipes* web app, it uses React and Redux to fetch cocktail data from cocktailDB API, it displays a list of cocktails, where you can filter results and a details page when you click on them;
 
 
 ### Built With
@@ -63,10 +63,10 @@ Type in your temrinal:
 - to run the dev server `npm start`
 - to build the project `npm run build`
 
-1. open a browser and go to `localhost:3000`
-2. filter based on your taste
-3. Click on the image or the name of the drink you like;
-4. Follow instructions;
+1. Open a browser and go to `localhost:3000`
+2. Filter based on your taste
+3. Click on the image or the name of the drink you like
+4. Follow instructions
 5. Enjoy your drink!
 
 
@@ -96,3 +96,4 @@ Give a ⭐️ if you like this project!
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
 - [Testing](https://malcolmkee.com/react-testing/testing-redux-and-router/)
+- [Mohamed](https://github.com/mohamedSabry0) for the help for the search feature
